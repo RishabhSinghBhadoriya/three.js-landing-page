@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Landing Page</title>
+    <link rel="icon" type="image" href="logotemp4.webp">
     <link
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
       rel="stylesheet"
@@ -56,8 +57,8 @@
         height: 8%;
         align-items: center;
         font-family: "Playfair Display", serif;
-        background: #1f2833;
-        backdrop-filter: blur(400px);
+        background: rgba(142, 142, 142, 0.1);
+        backdrop-filter: blur(50px);
         -webkit-backdrop-filter: blur(5px);
         transition: 0.3s;
       }
@@ -82,11 +83,37 @@
       nav > p,
       nav > button {
         font-size: 25px;
+        display: flex;
         font-family: "Playfair Display", serif;
         color: white;
         cursor: pointer;
         margin: 0 5px; /* Adjust margin to reduce space */
       }
+      nav > #icon{
+        display: none;
+        cursor: pointer;
+      }
+      @media (max-width:426px) {
+        nav{
+          height: 5%;
+        }
+        nav > p,nav > button{
+          height: 4%;
+          display: none;
+        }
+        nav > p,button{
+          height: 4%;
+          display: none;
+        }
+        nav > img{
+          left: 0px;
+          display: block;
+        }
+        nav > #icon{
+          display: block;
+        }
+      }
+      
     </style>
     <script type="importmap">
       {
@@ -105,6 +132,7 @@
         <p>About</p>
         <p>Docs</p>
         <button>Sign Up</button>
+        <img id="icon" src="menu_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png"/>
       </nav>
     </div>
     <h1 class="tagline">Building Technology for the future</h1>

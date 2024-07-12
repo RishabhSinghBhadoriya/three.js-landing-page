@@ -16,7 +16,7 @@ controls.minPolarAngle = Math.PI / 2;
 controls.maxPolarAngle = Math.PI / 2;
 const detail = 15;
 const loader = new THREE.TextureLoader();
-const geometry = new THREE.IcosahedronGeometry(2.5, detail);
+const geometry = new THREE.IcosahedronGeometry(2.8, detail);
 const material = new THREE.MeshStandardMaterial({
   map: loader.load("world.topo.bathy.200407.3x5400x2700.jpg"),
 });
